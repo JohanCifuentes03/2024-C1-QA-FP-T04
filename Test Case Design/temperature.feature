@@ -23,7 +23,7 @@ Feature: Convertir grados Celsius a grados Fahrenheit
 
 
   @exception
-  Scenario Outline: Ingreso de caracteres en el servicio en lugar de grados
+  Scenario Outline: Intento de conversión fallido por tipo de dato incorrecto
     When el usuario ingresa el caracter <caracter> en el servicio
     And corre el servicio
     Then recibiría una respuesta "Bad Request" 
